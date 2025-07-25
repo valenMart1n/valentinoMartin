@@ -22,7 +22,6 @@ function Sign() {
             <div className="flex">
                 <div className="data">
                     <h1>Valentino Martin</h1>
-                    <p>Desarrollador Web Full-Stack</p>
                  </div>
             <div className="buttons">
                         <Icon css="arrow" icon={faArrowDown}/>
