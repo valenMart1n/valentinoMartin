@@ -58,9 +58,9 @@ function Menu() {
          </div>
          <div className="navbar">
          <Link className="navbar-element" onClick={() => handleButtonClick(0)} to="/">INICIO</Link>
-          <Link className="navbar-element" onClick={() => handleButtonClick(700)} to="/sobreMi">SOBRE MI</Link>
-          <Link className="navbar-element" onClick={() => handleButtonClick(1200)} to="/proyectos">PROYECTOS</Link>
-          <Link className="navbar-element" onClick={() => handleButtonClick(2000)} to="/contacto">CONTACTO</Link>
+          <Link className="navbar-element" onClick={() => handleButtonClick(650)} to="/sobreMi">SOBRE MI</Link>
+          <Link className="navbar-element" onClick={() => handleButtonClick(900)} to="/proyectos">PROYECTOS</Link>
+          <Link className="navbar-element" onClick={() => handleButtonClick(1450)} to="/contacto">CONTACTO</Link>
         </div>
         </div>
         <div className={`links ${clicked ?  "active" : ""} ${header}`}>

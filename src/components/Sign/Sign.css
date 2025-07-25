@@ -49,31 +49,22 @@
     text-align: center;
     font-size: 25px; 
     font-weight: lighter;
+    width: 100%;
 }
-.data p{
-    
-    margin-top: 10px;
-    font-size: 18px;
-    text-align: center;
-    width: 90%;
-    color:#14e956; 
-    margin-bottom: 3em;
-    
-   
-   
-}
+
 .buttons{
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.arrow{
     color: white;
     padding: 10px;
     border-radius: 20px;
-    transition: all 400ms;
-}
-.arrow{
     font-size: 18px;
-  
+    background-color: #14e956;
+    border-color: #14e956;
     animation: arrow 0.75s ease both;
 }
 .profile{
@@ -101,13 +92,6 @@ li{
 }
 
 
-
-
-
-
-
-
-
 @media(min-width: 1024px){
     .data{
         width: 100%;
@@ -132,10 +116,7 @@ li{
 
 }
 
-.buttons{
-    background-color: #14e956;
-    border-color: #14e956;
-}
+
 
 @keyframes arrow {
     from {
