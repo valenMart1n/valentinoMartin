@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-background{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #050810;
+    
+}
+
+.brand, .brand2{
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+.brand{
+    background-color:  #222222;
+    
+}
+
+.brand2{
+    background-color: rgb(45, 136, 240);
+}
+
+.footnote{
+    color: #14e956;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px;
+    
+   
+    text-align: center;
+}
+@media(min-width: 1024px){
+    .brand, .brand2{
+        font-size: 35px;
+    }
+    .brand:hover{
+        box-shadow: rgba(225, 230, 236, 0.94) 9px 7px 32px -11px;
+    }
+    .brand2:hover{
+        box-shadow: rgba(68, 165, 255, 0.94) 9px 7px 32px -8px;
+    }
+    .footnote{
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 16px;
+    }
+}

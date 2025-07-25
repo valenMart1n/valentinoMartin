@@ -1,0 +1,45 @@
+.title-container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.title{
+    color:#14e956;
+    margin-left: 1em;
+    width: 95%;
+    font-size: 20px;
+    margin-top: 2em;
+    
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    padding-right: 10px;
+    border-right: 5px solid #14e956;
+   
+}
+.horizontal-bar{
+    background-color:#14e956;
+    width: 70%;
+    height: 4px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 1.5em;
+    
+   
+}
+@media(min-width: 769px){
+
+  
+    .title{
+        text-align: left;
+       
+    }
+    
+}
+
+@media(min-width: 1024px){
+    .title{
+        font-size: 25px;
+    }
+    .horizontal-bar{
+        width: 70%;      
+    }
+}

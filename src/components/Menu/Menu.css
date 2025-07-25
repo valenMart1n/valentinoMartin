@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+.background{
+    background-color:#10e956;
+  
+}
+.icon{
+    margin-right: 20px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+  
+}
+.logo{
+   margin-top: 10px;
+    width: 170px;
+    height: 50px;
+    
+}
+.header{
+  
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    font-size: 12px;
+    height: 4.5em;
+    border-bottom-style: solid;
+    background-color:#10e956;
+    border-bottom-width: 2px;
+    transition: all .5s ease;
+    
+}
+.links{
+    
+    background-color: #222222;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+   
+   transition: all .5s ease;
+   
+
+}
+/*No es el problema*/
+
+
+.option{
+   
+    width: 100%;
+    text-decoration: none;
+    color: #222222;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+    
+  
+}
+.links.active {
+    display: flex;
+    flex-wrap: wrap;
+    pointer-events: all;
+    overflow:auto;
+    height: 11em;
+    z-index: 3;
+    transition: all .5s ease;
+   
+}
+.links.active .option{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+}
+.navbar{
+    display: none;
+    font-size: 12px;
+    width: 60%;
+    
+}
+.navbar-element{
+    font-family: 'Rubik Mono One', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    transition: all .5s ease;
+    
+}
+
+.header.fixed{ 
+   position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color:#10e956;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #000000;
+    transition: all .5s ease;
+   
+}
+
+
+.links.active.fixed{
+    background-color:#222222;
+    position: fixed;
+    top: 0;
+    margin-top: 3.2em;
+    transition: all .5s ease;
+}
+
+@media(min-width: 1024px){
+    .icon{
+        display: none;
+    }
+   .links.active{
+    height: 0;
+
+    border-bottom-style: none;
+    transition: all .5s ease;
+   }
+   .navbar{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    }
+    .header{
+        justify-content: center;
+        height: 4em;
+    }
+    .navbar-element{
+        font-size: 20px;
+    }
+}
+.navbar-element:hover{
+   
+    background-color:#08a83b;
+ 
+}

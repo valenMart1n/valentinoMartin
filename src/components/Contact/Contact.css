@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contact-background{
+    background-color:#050810;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.contact-background h2{
+    color: #14e956;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    width: 100%;
+    
+    margin-top: 2em;
+    
+ }
+ .contact-background .bar{
+    background-color: #14e956;
+ }
+
+.contacts-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 4.5em;
+}
+.field-email, .field-name{
+    border-width: 1px;
+    border-color: #14e956;
+    width: 80%;
+    height: 15%;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+.field-email::placeholder {
+    color:#14e956;
+  }
+.field-name::placeholder {
+    color:#14e956;
+  }
+.field-message{
+    border-width: 1px;
+    border-color: #14e956;
+    color: white;
+    width: 80%;
+    height: 43%;
+    padding: 10px;
+    font-size: 14px;
+}
+.field-message::placeholder {
+    color:#14e956;
+  }
+.email-send{
+    
+    margin-top: 20px;
+
+    font-family: 'Rubik Mono One', sans-serif;
+    
+    font-size: 16px;
+    color: #050810;
+    background-color: #14e956;
+    background-image: linear-gradient(315deg,#14e956,#72f29a);
+    
+    padding: 10px;
+    
+}
+
+.result{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    color: #14e956;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    width: 80%;
+    height: 4em;   
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.contact-icon{
+    font-size: 35px;    
+    width: 100%;
+ 
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.field-email, .field-name, .field-message{
+    max-width: 560px;
+    background-color: #222222;
+    color: #14e956;
+}
+
+
+@media(min-width: 1024px){
+    .field-email, .field-name, .field-message{
+        max-width: 60%;
+    }
+    .contact-background .title-container .title{
+        color: #222222;
+        border-color: #222222;
+    }
+    .contact-background.active .title-container .title{
+        border-color: #14e956;
+        color: #14e956;     
+        animation: moveLeftText 0.75s ease both;
+    }
+    .contact-background .title-container .horizontal-bar{
+        background-color: #222222;
+    }
+    .contact-background.active .title-container .horizontal-bar{
+        background-color: #14e956;
+        animation: moveLeftText 0.75s ease both;
+    }
+    .email-send{
+        font-size: 20px;
+        transition: all .2s ease-in-out;
+    }
+    .email-send:hover{
+        transform: translateY(-6px);
+        box-shadow: rgba(20, 233, 86, 0.74) 9px 7px 32px -11px;
+       
+    }
+ 
+  
+}
